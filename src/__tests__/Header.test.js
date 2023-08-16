@@ -4,8 +4,9 @@ import React from "react";
 
 import Header from "../components/Header";
 
-test("displays the text 'hello from the Header!'", () => {
+test("displays the text 'hello from the Header!'within Header component", () => {
   render(<Header />);
 
+  
   expect(screen.queryByText("hello from the Header!")).toBeInTheDocument();
 });
